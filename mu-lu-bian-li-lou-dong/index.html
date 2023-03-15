@@ -462,37 +462,7 @@
   <span class="author" itemprop="copyrightHolder">SCERush</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
-  </div><!-- none-select-br -->
-
-<p></p>
-
-<!-- hitokoto -->
-
-<div class="hitokoto-title">
-	<i class="fa fa-paragraph"></i>
-	<b>一言</b>
-</div>
-
-<div id="hitokoto">:D 获取中...</div>
-<i id="hitofrom">:D 获取中...</i>
-
-<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-<script>
-  fetch('https://v1.hitokoto.cn/?c=a&c=b&c=c&c=d&c=h&c=l')
-    .then(function (res){
-      return res.json();
-    })
-    .then(function (data) {
-      var hitokoto = document.getElementById('hitokoto');
-      hitokoto.innerText = '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + data.hitokoto;
-      var hitofrom = document.getElementById('hitofrom');
-      hitofrom.innerText = "——" + data.from + '\xa0'; 
-    })
-    .catch(function (err) {
-      console.error(err);
-    })
-</script>
+  </div>
 
         
 
